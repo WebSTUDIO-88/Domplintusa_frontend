@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="plugins/glightbox/glightbox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=523922b2-2a90-4fdb-b31a-d69b9534ad28&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="loader-frame __loading">
+    <div class="loader-body">
+        <div>
+            <svg class="filter" version="1.1">
+                <defs>
+                    <filter id="gooeyness">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+                        <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+            <div class="dots">
+                <div class="dot mainDot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="float__menu">
+    <div class="top">
+        <div class="left">
+            <a href="/" class="logo"></a>
+        </div>    
+        <div class="right">
+            <div class="smallBasket">
+                <a href=""><span id = "basketCnt1" class = "basketCnt">0</span></a>
+            </div>
+            <button id = "hideMenu" class = "menu__mob"></button>
+        </div>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li><a href="">Каталог</a></li>
+            <li><a href="">Оплата</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Telegram</a></li>
+            <li><a href="">WhatsApp</a></li>
+            <li><a href="">Vkontakte</a></li>
+            <li><a href="">Instagram</a></li>
+        </ul>
+        <div class="contacts">
+            <p>МО, г. Щелково, ул. Браварская д. 9</p>
+            <a href="tel:+79260420709">+7 (926) 042-07-09</a>
+            <a href="tel:+74959757531">+7 (495) 975-75-31</a>
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="top">
+        <div class="container">
+            <div class="left">
+                <ul>
+                    <li><a href="">Telegram</a></li>
+                    <li><a href="">Whatsapp</a></li>
+                    <li><a href="">Vkontakte</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <p>МО, г. Щелково, ул. Браварская д. 9</p>
+            </div>
+            <div class="right">
+                <p><a href="tel:+79260420709">+7 (926) 042-07-09</a>  |  <a href = "tel:+74959757531">+7 (495) 975-75-31</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container">
+            <div class="left"><a href="/"></a></div>
+            <div class="center">
+                <ul>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Оплата</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button id = "showMenu" class = "menu__mob"></button>
+                <div class="smallBasket">
+                    <a href=""><span class = "basketAnc">Корзина</span> <span id = "basketCnt" class = "basketCnt">0</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>    
+
+<section class="section__1">
+    <div class="top">
+        <div class="container">
+            <h1 class = "wow bounceInLeft" >ПЛИНТУС ИЗ МДФ ОТ 320 РУБЛЕЙ</h1>
+            <div class = "painting">
+                <p>Покраска в любой цвет</p>
+                <a href="">Выбрать</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="left">
+            <div class="item item1"><img class = "wow fadeInDown" src="images/1.jpg" alt=""></div>
+            <div class="item item2"><img class = "wow fadeInDown" src="images/2.jpg" alt=""></div>
+            <div class="item item3"><img class = "wow fadeInDown" src="images/3.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<section class="section__2">
+    <p class="label">Наше производство</p>
+    <div class="container">
+        <div class="left wow flipInX">
+            <h2>Мы производим плинтус уже 14 лет!</h2>
+            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: перспективное планирование требует определения и уточнения форм воздействия. Противоположная точка зрения подразумевает, что независимые государства формируют глобальную.</p>
+            <div class="reviews">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p class = "count">89</p>
+                <p class = "creviews">5 424 отзывов</p>
+            </div>
+        </div>
+        <div class="right wow flipInY">
+            <div class="wrap">
+                <div class="shadow"></div>
+                <img src="images/video.jpg" alt="">
+                <a class = "play glightbox3" href="https://www.youtube.com/watch?v=Fi9ZL2zpidA">Play</a>
+            </div>
+            <a href="" class="goto">Посетить производство</a>
+        </div>
+    </div>
+</section>
+
+<section class="section__3">
+    <p class="label">Наша продукция</p>
+    <div class="container">
+        <div class="item wow bounceInTop"> 
+            <h3>Поинтус из МДФ</h3>
+            <div class="wrap">
+                <div class="left wow flipInY"><img src="images/p1.jpg" alt=""/></div>
+                <div class="right wow flipInX">
+                    <p class="text">Плинтус МДФ — модное решение в обустройстве жилья. Плинтус – это штрих, завершающий оформление пола, являющийся важной деталью будущего интерьера. Именно поэтому основные производители паркетной доски и ламината производят фирменные марки плинтусов, идеально сочетающихся с покрытиями для пола своих коллекций.</p>
+                    <p class="price">От: 320 руб./м2</p>
+                    <a href="">Выбрать</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <h3>Плинтус из массива</h3>
+            <div class="wrap wrap__revert">
+                <div class="left wow flipInY"><img src="images/p2.jpg" alt=""/></div>
+                <div class="right wow flipInX">
+                    <p class="text">Плинтус МДФ — модное решение в обустройстве жилья. Плинтус – это штрих, завершающий оформление пола, являющийся важной деталью будущего интерьера. Именно поэтому основные производители паркетной доски и ламината производят фирменные марки плинтусов, идеально сочетающихся с покрытиями для пола своих коллекций.</p>
+                    <p class="price">От: 320 руб./м2</p>
+                    <a href="">Выбрать</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <h3>Декоративная рейка</h3>
+            <div class="wrap">
+                <div class="left wow flipInX"><img src="images/p3.jpg" alt=""/></div>
+                <div class="right wow flipInY">
+                    <p class="text">Использование декоративных реек
+                        в интерьере. Декоративные рейки для стен в интерьере гостиной, кухни или спальни способны создавать запоминающиеся акценты в районе дивана, кровати или столовой зоны. Рельефные элементы заметно выделяются на фоне традиционной отделки стен и перетягивают на себя внимание.</p>
+                    <p class="price">От: 500 руб./м2</p>
+                    <a href="">Выбрать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="contacts">
+    <div class="container">
+        <p class="label">Наша продукция</p>
+        <div class="container">
+            <div class="left ">
+                <a class = "phone" href="tel:+79260420709">+7 (926) 042-07-09</a>
+                <a class = "phone" href="tel:+74959757531">+7 (495) 975-75-31</a>
+                <a class = "email" href="mailto:info@domplintusa.ru">info@domplintusa.ru</a>
+                <p class="addr">МО, г. Щелково, ул. Браварская д. 9</p>
+                <p class="time">с 10:00 до 20:00</p>
+
+                <div class="float__block">
+                    <img class = "img" src="images/img.jpg" alt=""/>
+                    <img id = "rotate" class = "circle" src="images/circle.svg" alt=""/>
+                </div>
+            </div>
+            <div class="right"><div id="map"></div></div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="left">
+            <a class = "logo" href=""></a>
+            <p>Все права защищены &copy; 2021<a href = "">Политика конфиденциальности</a></p>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">Оплата</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Сотрудничество</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Telegram</a></li>
+                <li><a href="">WhatsApp</a></li>
+                <li><a href="">Vkontakte</a></li>
+                <li><a href="">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script type = "text/javascript" src = "plugins/glightbox/glightbox.min.js"></script>
+<script type = "text/javascript" src = "js/jquery.min.js"></script>
+<script type = "text/javascript" src = "js/wow.min.js"></script>
+
+<script type = "text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [55.939449, 37.970871],
+            zoom: 10
+        }, {
+            searchControlProvider: 'yandex#search'
+        })
+
+        myMap.geoObjects.add(new ymaps.Placemark([55.939449, 37.970871],
+            {
+                balloonContent: 'МО, г. Щелково, ул. Браварская д. 9'
+            } 
+            )
+        )
+    }
+    /*--------------------------------------------------*/
+    var rect = document.getElementById('rotate')
+    var a = 1, b = 0, c = 0, d = 1, tx = 0, ty = 0, angle = 0, currentAngle
+
+    function getAngleToRAD(){
+      if(angle === 360){
+        angle = 0;
+      }
+
+      return angle++ * Math.PI / 360;
+    }
+    
+
+    function update(){
+      currentAngle = getAngleToRAD();
+
+      rect.style.transform = 'matrix(' + Math.cos(currentAngle) + ',' + Math.sin(currentAngle) + ',' + -Math.sin(currentAngle) + ',' + Math.cos(currentAngle) + ',' + tx + ',' + tx + ')'
+      window.requestAnimationFrame(update);
+    }
+
+    update();
+    /*------------------------------------------*/
+    var lightboxVideo = GLightbox({
+        selector: '.glightbox3'
+    });
+    lightboxVideo.on('slide_changed', ({ prev, current }) => {
+        console.log('Prev slide', prev);
+        console.log('Current slide', current);
+
+        const { slideIndex, slideNode, slideConfig, player } = current;
+
+        if (player) {
+            if (!player.ready) {
+                // If player is not ready
+                player.on('ready', (event) => {
+                    // Do something when video is ready
+                });
+            }
+
+            player.on('play', (event) => {
+                console.log('Started play');
+            });
+
+            player.on('volumechange', (event) => {
+                console.log('Volume change');
+            });
+
+            player.on('ended', (event) => {
+                console.log('Video ended');
+            });
+        }
+    });
+    /*--------------------------------------------*/
+    const btnShow = document.getElementById('showMenu')
+    const btnHide = document.getElementById('hideMenu')
+    const menu = document.querySelector('.float__menu')
+
+    btnShow.addEventListener('click',function(){
+        menu.style.left = '0'
+    })
+
+    btnHide.addEventListener('click',function(){
+        menu.style.left = '-100%'
+    })
+    /*--------------------------------------------*/
+    const window_height = (window.innerHeight ? window.innerHeight : (document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.offsetHeight))
+    
+    const elements = document.querySelectorAll('.label')
+    
+    window.addEventListener('scroll', function() {
+
+        const top = document.body.scrollTop
+        const find = false
+
+        elements.forEach(function(el) {
+
+            const el_top = el.offsetTop
+            //if(el_top > top && ((el.clientHeight + el_top) < (top + window_height))) {
+                el.style.backgroundSize = "1570px 1px"
+            //}
+
+        })
+
+    })
+
+
+    /*----------------------------------------------------*/
+    if($('body').width() > 1024) {
+        var wow = new WOW({
+            boxClass:     'wow',      
+            animateClass: 'animated', 
+            offset:       0,          
+            mobile:       true,       
+            live:         true  
+        });
+        wow.init();
+    }
+    window.addEventListener("load", function () {
+        document.querySelector('.loader-frame').classList.remove('__loading')
+    })
+</script>
+
+</body>
+</html>
